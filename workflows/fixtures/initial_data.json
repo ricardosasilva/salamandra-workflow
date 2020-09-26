@@ -1,0 +1,146 @@
+[
+{
+ "model": "workflows.workflow",
+ "pk": 1,
+ "fields": {
+  "created_at": "2019-05-17T05:09:49.841Z",
+  "modified_at": "2019-05-17T05:09:49.841Z",
+  "uuid": "zYeqX4G8NSJhLSruL2qJhf",
+  "is_active": true,
+  "name": "Atendimento paciente",
+  "slug": "atendimento-paciente"
+ }
+},
+{
+ "model": "workflows.workflowversion",
+ "pk": 1,
+ "fields": {
+  "created_at": "2019-05-17T05:11:04.609Z",
+  "modified_at": "2019-05-17T05:11:04.609Z",
+  "uuid": "LDU2fxQVnXuvuk9LQ2p9iC",
+  "is_active": true,
+  "workflow": 1,
+  "version": 1
+ }
+},
+{
+ "model": "workflows.group",
+ "pk": 1,
+ "fields": {
+  "created_at": "2019-05-17T05:17:29.071Z",
+  "modified_at": "2019-05-17T05:17:29.071Z",
+  "uuid": "6J8FS5TBKYJ9qbzfQvQ2wJ",
+  "name": "Atendimento Clientes",
+  "slug": "atendimento-clientes",
+  "users": [
+   1
+  ]
+ }
+},
+{
+ "model": "workflows.state",
+ "pk": 1,
+ "fields": {
+  "created_at": "2019-05-17T05:12:15.132Z",
+  "modified_at": "2019-05-17T05:14:25.766Z",
+  "uuid": "PqCJDSuN5n4jgUgmwZ5vx8",
+  "workflow_version": 1,
+  "name": "Criar novo atendimento",
+  "slug": "criar-novo-atendimento",
+  "is_initial": true,
+  "is_final": false,
+  "idle_time_warning": 2,
+  "idle_time_alert": 3,
+  "pause_time_warning": 2,
+  "pause_time_alert": 3,
+  "time_to_complete_warning": 2,
+  "time_to_complete_alert": 3,
+  "next": [
+   2,
+   3
+  ],
+  "required": [],
+  "groups": []
+ }
+},
+{
+ "model": "workflows.state",
+ "pk": 2,
+ "fields": {
+  "created_at": "2019-05-17T05:13:06.761Z",
+  "modified_at": "2019-05-17T05:14:40.777Z",
+  "uuid": "T3SPsntVJDqsho9X3AqgCe",
+  "workflow_version": 1,
+  "name": "Coletar dados do paciente",
+  "slug": "coletar-dados-do-paciente",
+  "is_initial": false,
+  "is_final": false,
+  "idle_time_warning": 2,
+  "idle_time_alert": 3,
+  "pause_time_warning": 2,
+  "pause_time_alert": 3,
+  "time_to_complete_warning": 2,
+  "time_to_complete_alert": 3,
+  "next": [
+   4
+  ],
+  "required": [
+   1
+  ],
+  "groups": []
+ }
+},
+{
+ "model": "workflows.state",
+ "pk": 3,
+ "fields": {
+  "created_at": "2019-05-17T05:13:34.728Z",
+  "modified_at": "2019-05-17T05:14:38.167Z",
+  "uuid": "xRSqULAdK6B3DPHF2G4GjH",
+  "workflow_version": 1,
+  "name": "Montar relat\u00f3rio m\u00e9dico",
+  "slug": "montar-relatorio-medico",
+  "is_initial": false,
+  "is_final": false,
+  "idle_time_warning": 2,
+  "idle_time_alert": 3,
+  "pause_time_warning": 2,
+  "pause_time_alert": 3,
+  "time_to_complete_warning": 2,
+  "time_to_complete_alert": 3,
+  "next": [
+   4
+  ],
+  "required": [
+   1
+  ],
+  "groups": []
+ }
+},
+{
+ "model": "workflows.state",
+ "pk": 4,
+ "fields": {
+  "created_at": "2019-05-17T05:13:47.622Z",
+  "modified_at": "2019-05-17T05:14:08.339Z",
+  "uuid": "G9YwQP63QfuYQG7GGeorWS",
+  "workflow_version": 1,
+  "name": "Liberar com plano de Saude",
+  "slug": "liberar-com-plano-de-saude",
+  "is_initial": false,
+  "is_final": true,
+  "idle_time_warning": 2,
+  "idle_time_alert": 3,
+  "pause_time_warning": 2,
+  "pause_time_alert": 3,
+  "time_to_complete_warning": 2,
+  "time_to_complete_alert": 3,
+  "next": [],
+  "required": [
+   2,
+   3
+  ],
+  "groups": []
+ }
+}
+]

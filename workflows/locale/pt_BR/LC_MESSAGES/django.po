@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-12 23:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: admin/task.py:15
+msgid "Abandon selected tasks"
+msgstr "Devolver a tarefa selecionada"
+
+#: admin/task.py:27
+msgid "Finish selected tasks"
+msgstr "Finalizar a tarefa selecionada"
+
+#: admin/task.py:38
+msgid "Pause selected tasks"
+msgstr "Pausar a tarefa selecionada"
+
+#: admin/task.py:49
+msgid "Start selected tasks"
+msgstr ""
+
+#: admin/task.py:60
+msgid "Reopen selected tasks"
+msgstr ""
+
+#: admin/task.py:71
+msgid "Unpause selected tasks"
+msgstr ""
+
+#: models/activity.py:82
+msgid "The activity must be one of the task states."
+msgstr ""
+
+#: models/activity.py:85
+msgid "The status must be one of the activity status."
+msgstr ""
+
+#: models/job.py:22
+msgid ""
+"Use to schedule jobs. The initial tasks only become active after this date "
+"and time."
+msgstr ""
+
+#: models/job.py:23
+msgid "A text to help to identify the purpose of the job."
+msgstr ""
+
+#: models/job.py:32
+msgid "Job"
+msgstr "Trabalho"
+
+#: models/job.py:33
+msgid "Jobs"
+msgstr "Trabalhos"
+
+#: models/job.py:44
+msgid "You need to select an active workflow version."
+msgstr "Você precisa selecionar uma versão ativa do workflow."
+
+#: models/job.py:49
+msgid "It is not possible to change the workflow version of a created job."
+msgstr ""
+
+#: models/state.py:23
+msgid "Name of python class with the code to evaluate state transition."
+msgstr ""
+"Nome da classe python com o código para avaliar as transições de estado."
+
+#: models/state.py:24
+msgid "Task's due time in minutes."
+msgstr ""
+
+#: models/state.py:25
+msgid "Time in minutes after the task creation to put it on warning status."
+msgstr ""
+
+#: models/state.py:28
+msgid "Max time, in minutes, the task may reamin unassigned."
+msgstr ""
+
+#: models/state.py:29
+msgid ""
+"Max time, in minutes, the task may reamin unassigned before it's status is "
+"set to warning."
+msgstr "Tempo máximo, em minutos, que a tarefa deve permanecer sem um responsável"
+"antes do status ser definido como de atenção."
+
+#: models/task.py:168
+msgid ""
+"Use to schedule tasks. The task only become active after this date and time."
+msgstr ""
+
+#: models/task.py:169
+msgid "The deadline to finish the task."
+msgstr "O prazo para finalizar a tarefa."
+
+#: models/task.py:170
+msgid "Date and time to change the task to the warning status."
+msgstr "Data e hora para o status de aviso de atenção da tarefa."
+
+#: models/task.py:181
+msgid "Additional task's due time in minutes."
+msgstr "Tempo adicional da tarefa em minutos."
+
+#: models/task.py:197
+msgid "In progress"
+msgstr "Em progresso"
+
+#: models/task.py:198
+msgid "Finished"
+msgstr "Finalizada"
+
+#: models/task.py:199
+msgid "Paused"
+msgstr "Pausada"
+
+#: models/task.py:200
+msgid "Waiting"
+msgstr "Aguardando"
+
+#: models/task.py:209
+msgid "On time"
+msgstr "Em dia"
+
+#: models/task.py:210
+msgid "On time (Paused)"
+msgstr "Em dia (Pausada)"
+
+#: models/task.py:211
+msgid "Warning"
+msgstr "Atenção"
+
+#: models/task.py:212
+msgid "Late"
+msgstr "Atrasada"
+
+#: models/task.py:239
+msgid "Task"
+msgstr "Tarefa"
+
+#: models/task.py:240
+msgid "Tasks"
+msgstr "Tarefas"
+
+#: models/task.py:359
+msgid "The state must be one of the job workflow."
+msgstr ""
+
+#: models/task.py:362 models/task.py:433
+msgid "It's not possible to pause an unstarted task."
+msgstr ""
+
+#: models/task.py:365 models/task.py:408
+msgid "It's not possible to finish an unstarted task."
+msgstr ""
+
+#: models/task.py:368
+msgid "The finish time must be greater than start time."
+msgstr ""
+
+#: models/task.py:371
+msgid "Select an user to start the task."
+msgstr ""
+
+#: models/task.py:384
+msgid "It's not possible to abandon a finished task"
+msgstr ""
+
+#: models/task.py:411 models/task.py:465
+msgid "The task is already finished."
+msgstr ""
+
+#: models/task.py:430
+msgid "The task is already paused."
+msgstr ""
+
+#: models/task.py:436
+msgid "It's not possible to pause a finished task."
+msgstr ""
+
+#: models/task.py:445
+msgid "It's not possible to reopen an unstarted task."
+msgstr ""
+
+#: models/task.py:448
+msgid "It's not possible to reopen an already open task."
+msgstr ""
+
+#: models/task.py:468
+msgid "The task is already started."
+msgstr ""
+
+#: models/task.py:478
+msgid "The task is not paused."
+msgstr ""
+
+#: views.py:26
+msgid ""
+"You need to define a success_redirect attribute or override "
+"get_success_redirect method when extending FinishTaskView"
+msgstr ""
+
+#: views.py:44
+msgid "Your aren't the task owner."
+msgstr ""
