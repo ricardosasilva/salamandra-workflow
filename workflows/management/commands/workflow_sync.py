@@ -1,11 +1,7 @@
 import importlib
-import inspect
 
-from django.conf import settings
-from django.core.management.base import BaseCommand, CommandError
-
+from django.core.management.base import BaseCommand
 from workflows.conf import settings
-from workflows.models import Workflow
 
 
 class Command(BaseCommand):

@@ -76,7 +76,8 @@ class State(UUIDBaseModel):
                 next_state = State.objects.get(workflow_version=self.workflow_version, class_name=class_name)
                 next_states.append({'state': next_state, 'activated_at': activated_at, 'additional_due_time': additional_due_time})
             except Exception as e:
-                logger.exception('Error creating next state', e)
+                logger.exception('Error creating next state')
+                logger.exception(e)
 
         return next_states
 

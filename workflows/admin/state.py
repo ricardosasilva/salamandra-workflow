@@ -18,7 +18,7 @@ class StateAdmin(admin.ModelAdmin):
         'created_at',
         'modified_at',
     )
-    list_filter = ('created_at', 'modified_at', 'is_initial', 'is_final',)
+    list_filter = ('created_at', 'modified_at', 'is_initial', 'is_final', 'workflow_version')
     readonly_fields = ('uuid', )
     search_fields = ('name', 'slug')
     prepopulated_fields = {'slug': ['name']}

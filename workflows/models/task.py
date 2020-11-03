@@ -185,7 +185,6 @@ class TaskManager(models.Manager):
             task.cancel(finished_by=finished_by, data=data)
 
 
-
 class Task(UUIDBaseModel):
     """A single task inside a job."""
     activated_at = models.DateTimeField(default=timezone.now, help_text=_('Use to schedule tasks. The task only become active after this date and time.'))
